@@ -24,8 +24,8 @@ function Portfolio() {
       {portfolio.map((item, index) => {
         return (
           <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.96 }}
+            whileHover={{ scale: 1.01 }}
+            whileTap={{ scale: 0.98 }}
             className="bg-[#1B1B1B] h-[18vw] w-[18vw] flex flex-col justify-end rounded-2xl relative"
           >
             <Image layout="fill" src={item.img} alt="Coin Image" />

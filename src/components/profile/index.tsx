@@ -11,6 +11,7 @@ import Portfolio from "./portfolio";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
 import Activity from "./activity";
 import Liquidty from "./liquidty";
+import { Pen } from "lucide-react";
 
 export default function Profile() {
   //TODO: get holdings
@@ -19,8 +20,8 @@ export default function Profile() {
     <div className="bg-[#0E0E0E] min-h-screen w-[100vw] text-white">
       <main className="px-4 py-8">
         <section className="flex gap-8">
-          <div className="flex flex-col items-start">
-            <Avatar className="mb-4">
+          <div className="flex flex-col pl-7 items-start">
+            <Avatar className="mb-4 h-[9rem] w-[9rem]">
               <AvatarImage
                 alt="Jesse Pollack"
                 src="https://pbs.twimg.com/profile_images/1484575656759472128/4vLR6_4F_400x400.png"
@@ -31,8 +32,15 @@ export default function Profile() {
             <p className="text-gray-400 mb-4">
               Your detailed description goes here...
             </p>
-            <Button className="mb-4" variant="outline">
-              Edit Profile
+            <Button
+              className="mb-4 flex items-center text-gray-900"
+              variant="outline"
+            >
+              <Pen
+                strokeWidth={3}
+                className="stroke-gray-900 mr-1 h-[0.8rem] w-[0.8rem]"
+              />{" "}
+              <div>Edit Profile</div>
             </Button>
             <div className="flex space-x-2">
               <GithubIcon className="text-gray-400" />
